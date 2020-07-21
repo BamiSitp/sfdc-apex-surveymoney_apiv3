@@ -1,11 +1,7 @@
 
     public class addReciepientEmail {
  
- 
       public final List<id> idList;
-     
-      
-
 
     public static void addEmailToMessage(String messageId) { 
        	Http http = new Http();
@@ -26,8 +22,7 @@
 	Map<String, Object> results = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());
             List<Object> messgaeResponse = (List<Object>) results.get('messages');
        System.debug('Here is the response  ' + response.getStatusCode());
-       System.debug('Here is the response  ' + response.getBody());
-           
+       System.debug('Here is the response  ' + response.getBody());    
           
     		
 }
